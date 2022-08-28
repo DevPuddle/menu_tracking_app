@@ -13,3 +13,12 @@ let usersSchema = new mongoose.Schema({
     entryDate: {type:Date, default:Date.now}
 })
 
+let menu = mongoose.model('menu', menuSchema, 'menu');
+let users = mongoose.model('users', usersSchema, 'users');
+let mySchemas = {
+    'menu' : menu,
+    'users' : users
+}
+
+module.exports = mySchemas
+
