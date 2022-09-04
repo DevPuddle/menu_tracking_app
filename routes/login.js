@@ -1,6 +1,7 @@
 const express = require('express')
 const router = express.Router()
-//add controllers
+const loginController = require('../controllers/login')
+
 // const { ensureAuth, ensureGuest} = require('../middleware/auth')
 
 router.get('/', loginController.getLogin)
