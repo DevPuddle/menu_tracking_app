@@ -7,8 +7,9 @@ const MongoStore = require('connect-mongo')(session)
 const flash = require('express-flash')
 const logger = require('morgan')
 const connectDB = require('./config/database')
-const mainRoutes = require('./routes/main')
-const todoRoutes = require('./routes/todos')
+const indexRouter = require('.routes/index')
+const menuRouter = require('.routes/menu')
+const loginRouter = require('.routes/login')
 
 require('dotenv').config({path: './config/.env'})
 
